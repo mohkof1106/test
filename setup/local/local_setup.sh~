@@ -1,0 +1,12 @@
+echo "Setting up tunnel"
+
+
+
+mv create_ssh_tunnel.sh ~/
+
+echo "ssh configuration"
+sudo mv ssh_config /etc/ssh/ssh_config
+sudo mv sshd_config /etc/ssh/sshd_config
+
+echo "set up crontab"
+crontab crontab.txt
